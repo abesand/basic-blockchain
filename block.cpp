@@ -1,20 +1,36 @@
 #include "block.hpp"
+#include <ctime>
 
-class block{
-  private:
-    int timeStamp;
-    int transactionData;
-    std::string previousBlockHash;
-    std::string currentBlockHash;
+std::time_t block::getTimeStamp() const
+{
+  return timeStamp;
+}
+void block::getTransactionData() const
+{
+  return;
+}
+void block::getPreviousBlockHash() const
+{
+  return;
+}
+void block::getCurrentBlockHash() const
+{
+  return;
+}
 
-    void setTimeStamp()
-    void setTransactionData()
-    void setPreviousBlockHash()
-    void setCurrentBlockHash()
-
-  public:
-    void getTimeStamp() const;
-    void getTransactionData() const;
-    void getPreviousBlockHash() const;
-    void getCurrentBlockHash() const;
-};
+void block::setTimeStamp(std::time_t t)
+{
+  timeStamp = t;
+}
+void block::setTransactionData()
+{
+  return;
+}
+void block::setPreviousBlockHash()
+{
+  return;
+}
+void block::setCurrentBlockHash()
+{
+  return;
+}

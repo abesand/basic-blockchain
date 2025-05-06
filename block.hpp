@@ -2,24 +2,25 @@
 #define BLOCK_HPP
 
 #include <string>
+#include <ctime>
 
 class block{
   private:
-    int timeStamp;
+    std::time_t timeStamp;
     int transactionData;
     std::string previousBlockHash;
     std::string currentBlockHash;
 
-    void setTimeStamp();
-    void setTransactionData();
-    void setPreviousBlockHash();
-    void setCurrentBlockHash();
-
   public:
-    void getTimeStamp() const;
+    std::time_t getTimeStamp() const;
     void getTransactionData() const;
     void getPreviousBlockHash() const;
     void getCurrentBlockHash() const;
+
+    void setTimeStamp(std::time_t t);
+    void setTransactionData();
+    void setPreviousBlockHash();
+    void setCurrentBlockHash();
 };
 
 #endif
