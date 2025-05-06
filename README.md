@@ -1,4 +1,4 @@
-<img src="blowfish2.jpeg"
+<img src="images/blowfish2.jpeg"
      alt="blowfish"
      style="float: left; margin-right: 10px;" />
 

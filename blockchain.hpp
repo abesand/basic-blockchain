@@ -14,6 +14,8 @@ class blockchain{
   public:
     // some sort of traverse function, perhaps Iterator
     // or something else, not sure
+    void addBlock();
+    void traverseBlockChain();
 };
 
 #endif

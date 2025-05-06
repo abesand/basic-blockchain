@@ -2,7 +2,6 @@
 #define BLOCK_HPP
 
 #include <string>
-#include <crpto++> // using BLOWFISH hash
 
 class block{
   private:
