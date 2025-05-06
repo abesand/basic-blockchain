@@ -5,32 +5,32 @@ std::time_t block::getTimeStamp() const
 {
   return timeStamp;
 }
-void block::getTransactionData() const
+int block::getTransactionData() const
 {
-  return;
+  return transactionData;
 }
-void block::getPreviousBlockHash() const
+std::string block::getPreviousBlockHash() const
 {
-  return;
+  return previousBlockHash;
 }
-void block::getCurrentBlockHash() const
+std::string block::getCurrentBlockHash() const
 {
-  return;
+  return currentBlockHash;
 }
 
-void block::setTimeStamp(std::time_t t)
+void block::setTimeStamp(std::time_t ts)
 {
-  timeStamp = t;
+  timeStamp = ts;
 }
-void block::setTransactionData()
+void block::setTransactionData(int td)
 {
-  return;
+  transactionData = td;
 }
-void block::setPreviousBlockHash()
+void block::setPreviousBlockHash(std::string pBH)
 {
-  return;
+  previousBlockHash = pBH;
 }
-void block::setCurrentBlockHash()
+void block::setCurrentBlockHash(std::string cBH)
 {
-  return;
+  currentBlockHash = cBH;
 }

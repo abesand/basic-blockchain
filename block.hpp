@@ -13,14 +13,14 @@ class block{
 
   public:
     std::time_t getTimeStamp() const;
-    void getTransactionData() const;
-    void getPreviousBlockHash() const;
-    void getCurrentBlockHash() const;
+    int getTransactionData() const;
+    std::string getPreviousBlockHash() const;
+    std::string getCurrentBlockHash() const;
 
-    void setTimeStamp(std::time_t t);
-    void setTransactionData();
-    void setPreviousBlockHash();
-    void setCurrentBlockHash();
+    void setTimeStamp(std::time_t ts);
+    void setTransactionData(int td);
+    void setPreviousBlockHash(std::string pBH);
+    void setCurrentBlockHash(std::string cBH);
 };
 
 #endif
